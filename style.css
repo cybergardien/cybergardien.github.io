@@ -1,30 +1,62 @@
-/* Basic reset */
 body, h1, h2, p, a {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-header, footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
+.container {
+    max-width: 1200px;
+    margin: auto;
     padding: 20px;
+}
+
+header {
+    background-color: #0078D4;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
 }
 
 main {
-    padding: 20px;
-    text-align: center;
+    padding: 15px 0;
 }
 
 section {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+}
+
+section#about {
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+section#projects {
+    background-color: #e7f1ff;
+    padding: 10px;
+}
+
+section#contact {
+    background-color: #f2f2f2;
+    padding: 10px;
 }
 
 a {
-    color: #06c;
+    color: #0078D4;
+    text-decoration: none;
 }
 
 footer {
-    font-size: 0.8em;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
 }
